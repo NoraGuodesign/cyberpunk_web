@@ -1,0 +1,413 @@
+/* 全局基础样式 */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; 
+  background-color: #000; 
+}
+
+/* 页首导航栏样式 */
+header {
+  background-color: #282828; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 60px; 
+}
+
+/* logo 效果*/
+.logo {
+  position: relative;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.logo .blue {
+  color: #25F8FF; 
+  position: absolute;
+  left: 2px;
+  top: 0;
+  filter: blur(1px); 
+}
+
+.logo .yellow {
+  color: #EDFF25; 
+  position: relative; 
+  z-index: 1; 
+}
+
+.logo .pink {
+  color: #FF2587; 
+  font-weight: 600; 
+  margin-left: 10px;
+}
+
+/* 顶部导航文字链接 */
+.special-link {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.special-link:link {
+  color: #FFFFFF;
+}
+
+.special-link:hover {
+  color: #25F8FF;
+  text-decoration: underline;
+}
+
+.special-link:visited {
+  color: #FFFFFF;
+}
+
+/*整体位置*/
+.nav-links {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;  
+  margin-right: 40px; 
+}
+
+/* BUY NOW 按钮*/
+.buy-btn {
+  background-color: #FF2587;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); 
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 35px 10px 25px;
+  text-decoration: none;
+}
+
+.buy-btn:hover,
+.explore-btn:hover {
+  background-color: #B50052;   
+  color: #E3D7DD;              
+}
+
+/* 主视觉区域 */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  background-image: url('./img/index_01.png');
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  box-sizing: border-box;
+}
+
+/* 半透明黑色遮罩层 */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.58; 
+}
+
+/* 文字内容 */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+/* 标题文字：Cyberpunk 2077 */
+.hero-content h1 {
+  color: white;
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* 描述文字 */
+.hero-content p {
+  color: white;
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* 两个按钮 */
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* EXPLORE 按钮 */
+.explore-btn {
+  background-color: #FF2587;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 40px 12px 30px;
+  text-decoration: none;
+}
+
+/* WATCH TRAILER 按钮 */
+.trailer-btn {
+  color: #25F8FF;
+  border: 2px solid #79F2FF; 
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 22px;
+  text-decoration: none;
+}
+
+.trailer-btn:hover {
+  background-color: rgba(121, 242, 255, 0.16); 
+}
+
+/*  ENTER NIGHT CITY   */
+.night-city-section {
+  background-color: #18171A;
+  padding: 60px 80px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.pink-bar {
+  width: 13px;
+  height: 62px;
+  background-color: #FF2587;
+  margin-right: 20px;
+}
+
+.section-title h2 {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 600; 
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px; 
+  padding: 0 40px; 
+}
+
+.info-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  background: linear-gradient(90deg, #AB1257,#16C8CE);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.card-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.card-title.pink { color: #FF2587; }
+.card-title.blue { color: #79F2FF; }
+.card-title.yellow { color: #EDFF25; }
+
+.card-text {
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* GAME FEATURES 区块 */
+.features-section {
+  background-color: #16152D;
+  padding: 60px 80px;
+}
+
+.features-title {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 400; 
+  text-align: center;
+}
+
+.features-underline {
+  width: 127px;
+  height: 6px;
+  background-color: #FF2587;
+  margin: 20px auto 50px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.feature-box {
+  background-color: #12141E;
+  color: white;
+  padding: 30px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 23%;
+  box-sizing: border-box;
+}
+
+.feature-box img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.feature-box h4 {
+  font-size: 20px;
+  font-weight: 500; 
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #9AA1AD;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .info-cards,
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    max-width: 100%;
+  }
+
+  .info-card {
+    max-width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .hero-content {
+    padding: 40px 5%;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+/* 页脚 */
+.footer-container {
+  background-color: #202031;
+  border-top: 1px solid #25F8FF;
+  padding: 60px 40px 30px;
+  color: #FFFFFF;
+}
+
+/* 中间三栏 */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+/* 每一列 */
+.footer-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-column h3 {
+  font-size: 24px;
+  color: #79F2FF;
+  margin-bottom: 20px;
+}
+
+.footer-column p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*.footer-column ul li a:hover {
+  text-decoration: underline;
+  color: #25F8FF;
+}
+*/
+/* 图标 */
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+}
+
+/* 横线 */
+.footer-line {
+  border: none;
+  border-top: 1px solid #9AA1A1;
+  margin: 40px auto 20px;
+  max-width: 1200px;
+}
+
+/* 底部版权 */
+.footer-note {
+  text-align: center;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 0;
+}
